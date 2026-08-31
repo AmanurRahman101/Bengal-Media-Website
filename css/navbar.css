@@ -36,25 +36,32 @@
 
 /* Brand Logo */
 .brand-logo-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
+  padding: 6px 14px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
   text-decoration: none;
   z-index: 1002;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-.brand-logo-svg {
+.brand-logo-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.brand-logo-img {
   height: 48px;
   width: auto;
-  transition: transform var(--transition-fast);
+  object-fit: contain;
+  display: block;
+  transition: height var(--transition-fast);
 }
 
-.site-header.scrolled .brand-logo-svg {
-  height: 42px;
-}
-
-.brand-logo-link:hover .brand-logo-svg {
-  transform: translateY(-1px);
+.site-header.scrolled .brand-logo-img {
+  height: 40px;
 }
 
 /* Desktop Navigation */

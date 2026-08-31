@@ -26,6 +26,11 @@
   height: 48px;
   width: auto;
   margin-bottom: 24px;
+  background: #FFFFFF;
+  padding: 6px 14px;
+  border-radius: 4px;
+  display: inline-block;
+  object-fit: contain;
 }
 
 .footer-about-text {
