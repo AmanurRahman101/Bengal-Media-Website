@@ -1,0 +1,279 @@
+/* ==========================================================================
+   BENGAL PRESS & MEDIA WORLD LTD — HERO CAROUSEL
+   Transcom BD Elite Full-Bleed Cinematic Slider
+   ========================================================================== */
+
+.hero-slider-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 680px;
+  background-color: var(--color-dark);
+  overflow: hidden;
+}
+
+.hero-slider-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.1s;
+  z-index: 1;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+/* Background Image Layer with Ken Burns effect */
+.hero-slide-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.06);
+  transition: transform 7.5s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.hero-slide.active .hero-slide-bg {
+  transform: scale(1);
+}
+
+/* Luxury Multi-Layer Vignette Overlay */
+.hero-slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(180deg, rgba(11, 15, 25, 0.72) 0%, rgba(11, 15, 25, 0.35) 45%, rgba(11, 15, 25, 0.88) 100%),
+    linear-gradient(90deg, rgba(11, 15, 25, 0.82) 0%, rgba(11, 15, 25, 0.3) 65%, rgba(11, 15, 25, 0.6) 100%);
+  z-index: 3;
+}
+
+/* Slide Content Container */
+.hero-slide-content {
+  position: relative;
+  z-index: 4;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: clamp(80px, 12vh, 120px);
+  padding-bottom: 120px;
+}
+
+.hero-content-box {
+  max-width: 960px;
+}
+
+.hero-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 30px;
+  color: #E2E8F0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s;
+}
+
+.hero-pill-badge .badge-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary-light);
+  border-radius: 50%;
+}
+
+/* Giant Transcom-Style Headline Typography */
+.hero-headline {
+  font-size: clamp(2.8rem, 6.5vw, 5.8rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.04;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.9s ease 0.45s, transform 0.9s ease 0.45s;
+}
+
+.hero-description {
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 680px;
+  margin-bottom: 38px;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s ease 0.6s, transform 0.9s ease 0.6s;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s ease 0.75s, transform 0.9s ease 0.75s;
+}
+
+.hero-slide.active .hero-pill-badge,
+.hero-slide.active .hero-headline,
+.hero-slide.active .hero-description,
+.hero-slide.active .hero-cta-group {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Transcom Minimalist Navigation Bar & Progress Trackers (Bottom) */
+.hero-controls {
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.hero-controls-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Slide Counter */
+.hero-counter {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.hero-counter .current-num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+/* Transcom Segmented Progress Indicators */
+.hero-indicators {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-grow: 1;
+  max-width: 580px;
+}
+
+.hero-indicator-bar {
+  position: relative;
+  flex: 1;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.22);
+  cursor: pointer;
+  overflow: hidden;
+  transition: height var(--transition-fast);
+}
+
+.hero-indicator-bar:hover {
+  height: 5px;
+}
+
+.hero-indicator-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #FFFFFF;
+  transition: width 0.1s linear;
+}
+
+.hero-indicator-bar.completed .hero-indicator-fill {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+/* Arrow controls */
+.hero-nav-arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-arrow-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.hero-arrow-btn:hover {
+  background: #FFFFFF;
+  color: var(--color-primary-dark);
+  border-color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .hero-controls-inner {
+    flex-wrap: wrap;
+  }
+  .hero-indicators {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 14px;
+  }
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .hero-cta-group .btn-transcom {
+    width: 100%;
+    justify-content: center;
+  }
+}

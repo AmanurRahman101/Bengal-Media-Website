@@ -1,0 +1,423 @@
+/* ==========================================================================
+   BENGAL PRESS & MEDIA WORLD LTD — FOOTER & CONNECT DRAWER
+   Transcom BD Minimalist Architectural Footer
+   ========================================================================== */
+
+.site-footer {
+  background-color: var(--color-dark);
+  color: var(--color-gray-400);
+  padding: 100px 0 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: clamp(30px, 4vw, 60px);
+  padding-bottom: 70px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand-col {
+  padding-right: 20px;
+}
+
+.footer-logo {
+  height: 48px;
+  width: auto;
+  margin-bottom: 24px;
+}
+
+.footer-about-text {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--color-gray-400);
+  margin-bottom: 28px;
+}
+
+.footer-col-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.footer-col-heading::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-primary-light);
+  margin-top: 8px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-nav-list a {
+  font-size: 0.9rem;
+  color: var(--color-gray-400);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-nav-list a:hover {
+  color: #FFFFFF;
+  transform: translateX(4px);
+}
+
+.footer-contact-block {
+  margin-bottom: 20px;
+}
+
+.footer-contact-block h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.footer-contact-block p {
+  font-size: 0.88rem;
+  color: var(--color-gray-400);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-contact-block a {
+  color: var(--color-gray-300);
+}
+
+.footer-contact-block a:hover {
+  color: var(--color-white);
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-social-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-300);
+  transition: all var(--transition-fast);
+}
+
+.footer-social-btn:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--color-gray-500);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-bottom-links a {
+  color: var(--color-gray-500);
+}
+
+.footer-bottom-links a:hover {
+  color: var(--color-gray-300);
+}
+
+/* ==========================================================================
+   SLIDE-OUT CONNECT DRAWER (Transcom 'CONNECT ->' Action)
+   ========================================================================== */
+.connect-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 540px;
+  height: 100vh;
+  background: var(--color-dark-surface);
+  color: var(--color-white);
+  z-index: 2000;
+  padding: 48px 40px;
+  overflow-y: auto;
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.6);
+  transition: right 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.connect-drawer.open {
+  right: 0;
+}
+
+.connect-drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.connect-drawer-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.drawer-header h3 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.drawer-close-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: background var(--transition-fast);
+  cursor: pointer;
+}
+
+.drawer-close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.drawer-desc {
+  font-size: 0.92rem;
+  color: var(--color-gray-400);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Connect Drawer Inquiry Tabs */
+.drawer-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.drawer-tab-btn {
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-gray-300);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.drawer-tab-btn.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-gray-300);
+  margin-bottom: 8px;
+}
+
+.form-control-transcom {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.form-control-transcom:focus {
+  outline: none;
+  border-color: var(--color-primary-light);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+textarea.form-control-transcom {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* Modal Popup for Division Details */
+.division-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-normal);
+}
+
+.division-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.division-modal-dialog {
+  background: var(--color-white);
+  width: 100%;
+  max-width: 720px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: var(--shadow-dark);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  transform: translateY(24px);
+  transition: transform var(--transition-normal);
+}
+
+.division-modal.open .division-modal-dialog {
+  transform: translateY(0);
+}
+
+.division-modal-header {
+  position: relative;
+  height: 220px;
+}
+
+.division-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.division-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  background: rgba(11, 15, 25, 0.85);
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.division-modal-body {
+  padding: 36px;
+}
+
+.division-modal-body h3 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.division-modal-specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+  padding: 20px;
+  background: var(--color-gray-50);
+  border-radius: 4px;
+  border: 1px solid var(--color-gray-200);
+}
+
+.spec-item h6 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-gray-500);
+  margin-bottom: 4px;
+}
+
+.spec-item p {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+  }
+  .connect-drawer {
+    padding: 32px 24px;
+  }
+  .drawer-tabs {
+    grid-template-columns: 1fr;
+  }
+}
