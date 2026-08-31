@@ -83,7 +83,7 @@
   transform: translateX(-50%) scaleX(0);
   width: 100%;
   height: 2px;
-  background-color: var(--color-primary-light);
+  background-color: #FFFFFF;
   transition: transform var(--transition-normal);
   transform-origin: center;
 }
