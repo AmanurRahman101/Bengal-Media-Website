@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Paper — Daily Digital Broadsheet — Bengal Press & Media World Ltd</title>
+  <meta name="description" content="Read today's morning digital broadsheet replica of Daily Bengal and The Bengal Herald across all regional editions.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/subpages.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header scrolled">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo-link">
+        <img src="assets/horizontal-logo-white.svg" alt="Bengal Press & Media World Ltd" class="brand-logo-svg">
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link-item">HOME</a>
+        <a href="publications.html" class="nav-link-item">PUBLICATIONS</a>
+        <a href="newsroom.html" class="nav-link-item">NEWSROOM</a>
+        <a href="epaper.html" class="nav-link-item active">E-PAPER</a>
+        <a href="about.html" class="nav-link-item">ABOUT & ETHICS</a>
+        <a href="contact.html" class="nav-link-item">CONTACT</a>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn-header-connect">CONNECT <span class="arrow">&rarr;</span></a>
+        <button class="mobile-toggle" id="mobileMenuBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">HOME</a>
+      <a href="publications.html" class="mobile-nav-link">OUR PUBLICATIONS</a>
+      <a href="newsroom.html" class="mobile-nav-link">LATEST NEWSROOM</a>
+      <a href="epaper.html" class="mobile-nav-link active">DIGITAL E-PAPER</a>
+      <a href="about.html" class="mobile-nav-link">ABOUT & ETHICS</a>
+      <a href="contact.html" class="mobile-nav-link">CONTACT THE DESK</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+      <div class="subpage-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1585829365295-ab7cd400c167?q=80&w=1920&auto=format&fit=crop');"></div>
+      <div class="container subpage-hero-content">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> <span>/</span> <span class="current">E-Paper</span>
+        </div>
+        <h1>Digital Broadsheet E-Paper</h1>
+        <p>
+          Experience today's complete morning broadsheet with full-color high-definition page replicas, regional edition switching, and instant article clippings.
+        </p>
+      </div>
+    </section>
+
+    <!-- E-Paper Interactive Hub -->
+    <section class="section" style="background: #FFFFFF;">
+      <div class="container">
+        
+        <div class="epaper-showcase-grid">
+          
+          <!-- Left: Broadsheet Page Preview -->
+          <div class="epaper-edition-preview">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1px solid #E2E8F0; padding-bottom: 12px;">
+              <div>
+                <strong style="color: var(--color-dark); font-size: 1.1rem;" id="currentEditionLabel">Daily Bengal — Dhaka Main Edition</strong>
+                <div style="font-size: 0.8rem; color: var(--color-gray-500);">Vol. XXXV, No. 12,840 &bull; Morning Print Edition</div>
+              </div>
+              <span class="pub-badge" style="margin: 0;">PAGE 1 / 16</span>
+            </div>
+
+            <!-- Authentic Broadsheet Image -->
+            <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?q=80&w=1000&auto=format&fit=crop" alt="Today's Front Page Broadsheet" id="epaperCover">
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; font-size: 0.85rem;">
+              <button class="btn-transcom" style="padding: 8px 16px; font-size: 0.75rem;" onclick="alert('Opening Fullscreen Interactive High-Definition Broadsheet Viewer...');">
+                FULLSCREEN ZOOM &#x26F6;
+              </button>
+              <button class="btn-transcom" style="padding: 8px 16px; font-size: 0.75rem; border-color: var(--color-gray-300); color: var(--color-gray-700);" onclick="alert('Preparing high-resolution PDF download for offline reading...');">
+                DOWNLOAD PDF &#11123;
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Regional Editions & Section Navigator -->
+          <div>
+            <div class="section-tag">CHOOSE REGIONAL EDITION</div>
+            <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Today's Regional Editions</h2>
+            <p style="color: var(--color-gray-600); margin-bottom: 24px; line-height: 1.7;">
+              Select your preferred regional broadsheet edition tailored with localized provincial investigations, municipal news, and regional market commodity rates.
+            </p>
+
+            <div class="epaper-edition-selector">
+              <button class="edition-btn active" data-edition="dhaka">Dhaka Central</button>
+              <button class="edition-btn" data-edition="chittagong">Chittagong Port & Commercial</button>
+              <button class="edition-btn" data-edition="sylhet">Sylhet Division</button>
+              <button class="edition-btn" data-edition="rajshahi">Rajshahi & North Bengal</button>
+              <button class="edition-btn" data-edition="herald">The Bengal Herald (English)</button>
+            </div>
+
+            <div style="margin-top: 36px;">
+              <h4 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--color-dark);">Browse Today's Sections</h4>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div style="padding: 12px 16px; background: var(--color-gray-50); border: 1px solid var(--color-gray-200); border-radius: 2px;">
+                  <strong style="font-size: 0.9rem;">Page 1:</strong> <span style="font-size: 0.85rem; color: var(--color-gray-600);">National Lead Stories & Politics</span>
+                </div>
+                <div style="padding: 12px 16px; background: var(--color-gray-50); border: 1px solid var(--color-gray-200); border-radius: 2px;">
+                  <strong style="font-size: 0.9rem;">Page 2-3:</strong> <span style="font-size: 0.85rem; color: var(--color-gray-600);">Metropolitan & 64 Districts</span>
+                </div>
+                <div style="padding: 12px 16px; background: var(--color-gray-50); border: 1px solid var(--color-gray-200); border-radius: 2px;">
+                  <strong style="font-size: 0.9rem;">Page 4:</strong> <span style="font-size: 0.85rem; color: var(--color-gray-600);">Editorial & Guest Columns</span>
+                </div>
+                <div style="padding: 12px 16px; background: var(--color-gray-50); border: 1px solid var(--color-gray-200); border-radius: 2px;">
+                  <strong style="font-size: 0.9rem;">Page 5:</strong> <span style="font-size: 0.85rem; color: var(--color-gray-600);">Trade, Economy & Stock Markets</span>
+                </div>
+                <div style="padding: 12px 16px; background: var(--color-gray-50); border: 1px solid var(--color-gray-200); border-radius: 2px;">
+                  <strong style="font-size: 0.9rem;">Page 6:</strong> <span style="font-size: 0.85rem; color: var(--color-gray-600);">Arts, Culture & Literature</span>
+                </div>
+                <div style="padding: 12px 16px; background: var(--color-gray-50); border: 1px solid var(--color-gray-200); border-radius: 2px;">
+                  <strong style="font-size: 0.9rem;">Back Page:</strong> <span style="font-size: 0.85rem; color: var(--color-gray-600);">International & Sports</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 36px; padding: 24px; background: rgba(0, 56, 168, 0.05); border: 1px solid rgba(0, 56, 168, 0.15); border-radius: 4px;">
+              <h4 style="font-size: 1rem; color: var(--color-primary); margin-bottom: 6px;">Looking for Historical Editions?</h4>
+              <p style="font-size: 0.9rem; color: var(--color-gray-600); margin: 0 0 14px;">
+                Our digital archives contain digitized microfilms and search-indexed broadsheets dating back to our inaugural edition in 1991.
+              </p>
+              <a href="contact.html?type=archive" class="btn-transcom" style="padding: 8px 18px; font-size: 0.76rem;">
+                REQUEST ARCHIVE ACCESS &rarr;
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/horizontal-logo-white.svg" alt="Bengal Press & Media World Ltd" class="footer-logo">
+          <p class="footer-about-text">
+            Bengal Press & Media World Ltd is Bangladesh's premier publishing, newspaper, and multimedia conglomerate. Dedicated to fearless journalism, constitutional freedom of speech, and nationwide distribution.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-heading">CIRCULATION HOTLINE</h4>
+          <div class="footer-contact-block">
+            <h5>Newspaper Delivery & Agents</h5>
+            <p>Hotline : +880 2 8878544<br>Email : circulation@bengalpress.com</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-heading">REGIONAL BUREAUS</h4>
+          <div class="footer-contact-block">
+            <h5>Chittagong & Sylhet</h5>
+            <p>Agrabad Commercial Area, Chittagong<br>Zindabazar, Sylhet, Bangladesh.</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-heading">NAVIGATION</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Our Publications</a></li>
+            <li><a href="newsroom.html">Live Newsroom</a></li>
+            <li><a href="epaper.html">Today's E-Paper</a></li>
+            <li><a href="about.html">Editorial Code of Ethics</a></li>
+            <li><a href="contact.html">Contact & Advertising</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>Copyright &copy; 2026 Bengal Press &amp; Media World Ltd. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="about.html#ethics">Editorial Guidelines</a>
+          <a href="contact.html">Whistleblower Desk</a>
+          <a href="contact.html">Ad Rates</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const editionButtons = document.querySelectorAll('.edition-btn');
+    const editionLabel = document.getElementById('currentEditionLabel');
+    const editionCover = document.getElementById('epaperCover');
+
+    const covers = {
+      'dhaka': {
+        title: 'Daily Bengal — Dhaka Main Edition',
+        img: 'https://images.unsplash.com/photo-1585829365295-ab7cd400c167?q=80&w=1000&auto=format&fit=crop'
+      },
+      'chittagong': {
+        title: 'Daily Bengal — Chittagong Port & Commercial Edition',
+        img: 'https://images.unsplash.com/photo-1546422904-90eab23c3d7e?q=80&w=1000&auto=format&fit=crop'
+      },
+      'sylhet': {
+        title: 'Daily Bengal — Sylhet Division Edition',
+        img: 'https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?q=80&w=1000&auto=format&fit=crop'
+      },
+      'rajshahi': {
+        title: 'Daily Bengal — Rajshahi & North Bengal Edition',
+        img: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1000&auto=format&fit=crop'
+      },
+      'herald': {
+        title: 'The Bengal Herald — National English Broadsheet',
+        img: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1000&auto=format&fit=crop'
+      }
+    };
+
+    editionButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        editionButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const edition = btn.getAttribute('data-edition');
+        if (covers[edition]) {
+          editionLabel.textContent = covers[edition].title;
+          editionCover.src = covers[edition].img;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

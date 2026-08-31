@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiries — Bengal Press & Media World Ltd</title>
+  <meta name="description" content="Connect with Bengal Press & Media World Ltd newsroom, editorial desk, advertisement booking, or submit confidential news tips.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/subpages.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header scrolled">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo-link">
+        <img src="assets/horizontal-logo-white.svg" alt="Bengal Press & Media World Ltd" class="brand-logo-svg">
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link-item">HOME</a>
+        <a href="publications.html" class="nav-link-item">PUBLICATIONS</a>
+        <a href="newsroom.html" class="nav-link-item">NEWSROOM</a>
+        <a href="epaper.html" class="nav-link-item">E-PAPER</a>
+        <a href="about.html" class="nav-link-item">ABOUT & ETHICS</a>
+        <a href="contact.html" class="nav-link-item active">CONTACT</a>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn-header-connect">CONNECT <span class="arrow">&rarr;</span></a>
+        <button class="mobile-toggle" id="mobileMenuBtn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">HOME</a>
+      <a href="publications.html" class="mobile-nav-link">OUR PUBLICATIONS</a>
+      <a href="newsroom.html" class="mobile-nav-link">LATEST NEWSROOM</a>
+      <a href="epaper.html" class="mobile-nav-link">DIGITAL E-PAPER</a>
+      <a href="about.html" class="mobile-nav-link">ABOUT & ETHICS</a>
+      <a href="contact.html" class="mobile-nav-link active">CONTACT THE DESK</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+      <div class="subpage-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?q=80&w=1920&auto=format&fit=crop');"></div>
+      <div class="container subpage-hero-content">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> <span>/</span> <span class="current">Contact & Inquiries</span>
+        </div>
+        <h1>Connect with Bengal Press</h1>
+        <p>
+          Reach our central newsroom, regional correspondents, commercial advertising desk, or submit confidential investigative leads to our protected editorial board.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Details & Form -->
+    <section class="section" style="background: #FFFFFF;">
+      <div class="container">
+        
+        <div class="contact-page-grid">
+          
+          <!-- Left: Interactive Dispatch Form -->
+          <div>
+            <div class="section-tag">DIRECT TRANSMISSION</div>
+            <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Send a Message to the Editorial Board</h2>
+            <p style="color: var(--color-gray-600); margin-bottom: 28px; line-height: 1.7;">
+              Select the relevant department below. All investigative tips and whistleblower dispatches are handled under strict journalistic confidentiality protocols.
+            </p>
+
+            <div class="drawer-tabs" style="margin-bottom: 24px;">
+              <button class="drawer-tab-btn active" data-dept="newsroom">Newsroom / Editorial</button>
+              <button class="drawer-tab-btn" data-dept="tip">Confidential Tip</button>
+              <button class="drawer-tab-btn" data-dept="ads">Advertisement Desk</button>
+              <button class="drawer-tab-btn" data-dept="circulation">Circulation / Agent</button>
+            </div>
+
+            <form id="contactPageForm" onsubmit="event.preventDefault(); alert('Your dispatch has been encrypted and received by Bengal Press & Media World Ltd.\nRef ID: BPMW-' + Math.floor(100000 + Math.random() * 900000) + '\nOur desk will review your inquiry promptly.'); this.reset();">
+              <div class="form-group">
+                <label for="contactName" class="form-label" style="color: var(--color-dark);">Full Name / Organization</label>
+                <input type="text" id="contactName" class="form-control-transcom" style="background: var(--color-gray-50); color: var(--color-dark); border-color: var(--color-gray-300);" placeholder="e.g. Tanzim Ahmed / Dhaka Chamber" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label" style="color: var(--color-dark);">Email Address</label>
+                <input type="email" id="contactEmail" class="form-control-transcom" style="background: var(--color-gray-50); color: var(--color-dark); border-color: var(--color-gray-300);" placeholder="tanzim@domain.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactPhone" class="form-label" style="color: var(--color-dark);">Telephone / Mobile</label>
+                <input type="tel" id="contactPhone" class="form-control-transcom" style="background: var(--color-gray-50); color: var(--color-dark); border-color: var(--color-gray-300);" placeholder="+880 1700 000000">
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label" style="color: var(--color-dark);">Subject Line</label>
+                <input type="text" id="contactSubject" class="form-control-transcom" style="background: var(--color-gray-50); color: var(--color-dark); border-color: var(--color-gray-300);" value="Editorial Desk Inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label" style="color: var(--color-dark);">Message / Evidence / Details</label>
+                <textarea id="contactMessage" class="form-control-transcom" style="background: var(--color-gray-50); color: var(--color-dark); border-color: var(--color-gray-300); min-height: 140px;" placeholder="Please provide your message or confidential details..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-transcom" style="width: 100%; justify-content: center; margin-top: 10px;">
+                SUBMIT DISPATCH <span class="btn-arrow">&rarr;</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Bureau Directory & Contact Points -->
+          <div>
+            <div class="section-tag">DIRECTORY & LOCATIONS</div>
+            <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Corporate & Newsroom Desks</h2>
+            <p style="color: var(--color-gray-600); margin-bottom: 28px; line-height: 1.7;">
+              Our central headquarters and nationwide regional bureaus operate 24 hours a day, 7 days a week.
+            </p>
+
+            <div class="contact-bureau-grid">
+              
+              <div class="bureau-card">
+                <h5>Central Newsroom (Dhaka)</h5>
+                <p>Bengal Media Tower, Plot 42<br>Bir Uttam Mir Shawkat Sarak<br>Tejgaon I/A, Dhaka-1208</p>
+                <p><strong>Hotline:</strong> +880 2 8878541</p>
+                <p><strong>Email:</strong> newsroom@bengalpress.com</p>
+              </div>
+
+              <div class="bureau-card">
+                <h5>Chittagong Regional Bureau</h5>
+                <p>Bengal Bhaban, 14 Agrabad C/A<br>Chittagong-4100, Bangladesh</p>
+                <p><strong>Phone:</strong> +880 31 716421</p>
+                <p><strong>Email:</strong> ctg@bengalpress.com</p>
+              </div>
+
+              <div class="bureau-card">
+                <h5>Sylhet Regional Bureau</h5>
+                <p>Zindabazar Commercial Center<br>Sylhet-3100, Bangladesh</p>
+                <p><strong>Phone:</strong> +880 821 724810</p>
+                <p><strong>Email:</strong> sylhet@bengalpress.com</p>
+              </div>
+
+              <div class="bureau-card">
+                <h5>Advertisement Desk</h5>
+                <p>Commercial Marketing Wing<br>5th Floor, Bengal Media Tower</p>
+                <p><strong>Direct:</strong> +880 2 8878548</p>
+                <p><strong>Rate Cards:</strong> ads@bengalpress.com</p>
+              </div>
+
+            </div>
+
+            <!-- Whistleblower Protection Banner -->
+            <div style="margin-top: 32px; padding: 24px; background: rgba(0, 56, 168, 0.05); border-left: 4px solid var(--color-primary); border-radius: 4px;">
+              <h4 style="font-size: 1.05rem; color: var(--color-dark); margin-bottom: 8px;">Whistleblower & Investigative Tip Protection</h4>
+              <p style="font-size: 0.9rem; color: var(--color-gray-600); margin: 0; line-height: 1.6;">
+                If you possess documentation, public audits, or evidence regarding corruption, corporate malfeasance, or environmental hazards, our investigative bureau provides PGP-encrypted communication channels. Sources are legally shielded under our constitutional editorial charter.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/horizontal-logo-white.svg" alt="Bengal Press & Media World Ltd" class="footer-logo">
+          <p class="footer-about-text">
+            Bengal Press & Media World Ltd is Bangladesh's premier publishing, newspaper, and multimedia conglomerate. Dedicated to fearless journalism, constitutional freedom of speech, and nationwide distribution.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-heading">HEADQUARTERS</h4>
+          <div class="footer-contact-block">
+            <h5>Bengal Media Tower</h5>
+            <p>Plot # 42, Bir Uttam Mir Shawkat Sarak<br>Tejgaon Industrial Area<br>Dhaka-1208, Bangladesh.</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-heading">REGIONAL BUREAUS</h4>
+          <div class="footer-contact-block">
+            <h5>Chittagong & Sylhet</h5>
+            <p>Agrabad Commercial Area, Chittagong<br>Zindabazar, Sylhet, Bangladesh.</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-heading">NAVIGATION</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Our Publications</a></li>
+            <li><a href="newsroom.html">Live Newsroom</a></li>
+            <li><a href="epaper.html">Today's E-Paper</a></li>
+            <li><a href="about.html">Editorial Code of Ethics</a></li>
+            <li><a href="contact.html">Contact & Advertising</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>Copyright &copy; 2026 Bengal Press &amp; Media World Ltd. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="about.html#ethics">Editorial Guidelines</a>
+          <a href="contact.html">Whistleblower Desk</a>
+          <a href="contact.html">Ad Rates</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Tab switching for contact form department
+    const deptTabs = document.querySelectorAll('.drawer-tab-btn');
+    const subjectInput = document.getElementById('contactSubject');
+    const messageInput = document.getElementById('contactMessage');
+
+    deptTabs.forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        e.preventDefault();
+        deptTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const dept = tab.getAttribute('data-dept');
+        if (dept === 'tip') {
+          subjectInput.value = 'Confidential Investigative News Tip (Encrypted Lead)';
+          messageInput.placeholder = 'Provide evidence, background, or documentation...';
+        } else if (dept === 'ads') {
+          subjectInput.value = 'Print & Digital Advertisement Campaign Inquiry';
+          messageInput.placeholder = 'Describe your target campaign, preferred publications, and schedule...';
+        } else if (dept === 'circulation') {
+          subjectInput.value = 'Broadsheet Circulation & Regional Agent Inquiry';
+          messageInput.placeholder = 'Specify district, required daily copy volume, and distribution terms...';
+        } else {
+          subjectInput.value = 'Editorial Desk Inquiry';
+          messageInput.placeholder = 'Please provide your message or inquiry...';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
