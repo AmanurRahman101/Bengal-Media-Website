@@ -5,7 +5,7 @@
 
 .site-header {
   position: fixed;
-  top: 38px; /* Offset for ticker */
+  top: 0;
   left: 0;
   width: 100%;
   height: var(--header-height);
